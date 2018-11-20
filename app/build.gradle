@@ -3,6 +3,15 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     buildToolsVersion "27.0.3"
+    signingConfigs {
+        release {
+            storeFile file('aa.keystore.jks')
+            storePassword 'hao7702932737'
+            keyAlias 'aa'
+            keyPassword 'hao7702932737'
+        }
+    }
+
     defaultConfig {
         applicationId "com.example.a94665.androiddemo"
         minSdkVersion 21
